@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export const Footer = () => {
     return (<div className='main-color'>
         <footer className='container d-flex flex-wrap justify-content-between
@@ -7,10 +9,10 @@ export const Footer = () => {
             </p>
             <ul className='nav navbar-dark col-md-4 justify-content-end'>
                 <li className='nav-item'>
-                    <a className='nav-link px-2 text-white' href='#'>Home</a>
+                    <Link className='nav-link px-2 text-white' to='/luv2learn'>Home</Link>
                 </li>
                 <li className='nav-item'>
-                    <a className='nav-link px-2 text-white' href='#'>Search Books</a>
+                    <Link className='nav-link px-2 text-white' to='/search'>Search Books</Link>
                 </li>
             </ul>
         </footer>
